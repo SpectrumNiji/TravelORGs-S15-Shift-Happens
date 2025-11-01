@@ -17,8 +17,23 @@
 <body>
 
   <div class="start-screen fade-up">
+
+        <!-- Temporary interal CSS for desktop and mobile view -->
+
+    <style>
+      @media (max-width: 599px) {
+        .desktop-only { display: none; }
+        .start-screen { margin: 20px; }
+      }
+      @media (min-width: 600px) {
+        .mobile-only { display: none; }
+      }
+    </style>
+
     <h1>Makorokoto!</h1>
+
     <p class="subtitle"><i>Congratulations on completing the Final 4 Immunity Challenge!</i></p>
+    
   </div>
 
 </body>

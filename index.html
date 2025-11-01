@@ -18,10 +18,25 @@
 
   <div class="start-screen fade-up">
     <button onclick="location.href='nehanda.html'">Start</button>
-    <p class="subtitle"><i>The demo run for Final 4 Immunity Challenge should take about 30 seconds. Once you've gone through all five prompts, <br> please take a screenshot of the results page and send it to your submissions channel. Happy sorting!</i></p>
+
+    <!-- Temporary interal CSS for desktop and mobile view -->
+
+    <style>
+      @media (max-width: 599px) {
+        .desktop-only { display: none; }
+        .start-screen { margin: 20px; }
+      }
+      @media (min-width: 600px) {
+        .mobile-only { display: none; }
+      }
+    </style>
+
+    <p class="subtitle desktop-only"><i>The Final 4 Immunity Challenge should take about X minutes. Once you've gone through all five <br> prompts, please take a screenshot of the results page and send it to your submissions channel. Happy sorting!</i></p>
+
+    <p class="subtitle mobile-only"><i>The Final 4 Immunity Challenge should take about X minutes. Once you've gone through all five prompts, please take a screenshot of the results page and send it to your submissions channel. Happy sorting!</i></p>
+
   </div>
 
 </body>
-
 
 </html>
