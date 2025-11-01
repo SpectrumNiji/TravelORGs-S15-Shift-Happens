@@ -1,0 +1,91 @@
+/* ========== Font Import & Classes ========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.caudex-regular {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caudex-bold {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.caudex-regular-italic {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.caudex-bold-italic {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ========== Main Layout ========== */
+
+body {
+    background-color: #2d2656;
+    color: #bdd2e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.subtitle {
+    opacity: 0.9;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.75s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+}
+
+/* ========== index.html ========== */
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.start-screen button {
+    font-family: "Caudex", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    padding: 10px 20px;
+    background-color: #4e457f;
+    color: #bdd2e6;
+    border: 5px solid #090928;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+
+.start-screen button:hover {
+  background-color: #60538f;
+  color: #dbeaf8;
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* ========== Challenge Grids ========== */
