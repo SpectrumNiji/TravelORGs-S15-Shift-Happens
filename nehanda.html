@@ -2,20 +2,56 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/1058229946666979429/1428834224244523058/plane.png?ex=69066611&is=69051491&hm=1453da779ab8984b45acc577538476b1efd62694371bffe3111ee5418bed87b7&=&format=webp&quality=lossless">
+    <link rel="icon" type="image/x-icon"
+        href="https://media.discordapp.net/attachments/1058229946666979429/1428834224244523058/plane.png?ex=69066611&is=69051491&hm=1453da779ab8984b45acc577538476b1efd62694371bffe3111ee5418bed87b7&=&format=webp&quality=lossless" />
 
     <title>F4 Immunity &bull; Round 1</title>
 
-    <link rel="stylesheet" href="css/layout.css">
-
+    <link rel="stylesheet" href="css/layout.css" />
 </head>
 
 <body>
 
+    <div class="grid-wrapper fade-up">
+
+        <div class="top-buttons">
+            <button class="side-button" onclick="shiftColumn(0, 'down')">▼</button>
+            <button class="side-button" onclick="shiftColumn(1, 'down')">▼</button>
+            <button class="side-button" onclick="shiftColumn(2, 'down')">▼</button>
+        </div>
+
+        <div class="left-buttons">
+            <button class="side-button" onclick="shiftRow(0, 'right')">▶</button>
+            <button class="side-button" onclick="shiftRow(1, 'right')">▶</button>
+            <button class="side-button" onclick="shiftRow(2, 'right')">▶</button>
+        </div>
+
+        <table id="grid" class="grid">
+            <tbody></tbody>
+        </table>
+
+        <div class="right-buttons">
+            <button class="side-button" onclick="shiftRow(0, 'left')">◀</button>
+            <button class="side-button" onclick="shiftRow(1, 'left')">◀</button>
+            <button class="side-button" onclick="shiftRow(2, 'left')">◀</button>
+        </div>
+
+        <div class="bottom-buttons">
+            <button class="side-button" onclick="shiftColumn(0, 'up')">▲</button>
+            <button class="side-button" onclick="shiftColumn(1, 'up')">▲</button>
+            <button class="side-button" onclick="shiftColumn(2, 'up')">▲</button>
+        </div>
+
+        <div class="progression-container">
+            <button class="progression-button" onclick="location.href='makorokoto.html'">Proceed</button>
+        </div>
+
+    </div>
+
+    <script src="js/round1.js"></script>
 </body>
 
 </html>
